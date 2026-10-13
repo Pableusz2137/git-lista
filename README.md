@@ -1,2 +1,2 @@
 # git-lista
-Kochac PWR
+Hermez pizza
