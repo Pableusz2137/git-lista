@@ -12,6 +12,9 @@ public class Konto {
     public static final float MAKS_WYPLATA = 5000;
 
 
+    protected void ustawSaldo(float noweSaldo) {
+        this.saldo = noweSaldo;
+    }
 
     public Konto(String wlasciciel) {
         liczbakont++;
@@ -60,8 +63,6 @@ public class Konto {
     }
 
 
-
-
     public boolean wplac(float kwota) {
         if (kwota <= 0) {
             return false;
@@ -91,5 +92,9 @@ public class Konto {
     @Override
     public String toString() {
         return "Konto nr " + numer + " [" + wlasciciel + "] saldo: " + saldo + " | operacji: " + liczbaOperacji;
+    }
+
+    protected float ustawSaldo() {
+        return this.saldo = saldo;
     }
 }
